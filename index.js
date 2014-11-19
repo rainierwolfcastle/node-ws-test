@@ -25,4 +25,8 @@ wss.on("connection", function(ws) {
     console.log("websocket connection close")
 //    clearInterval(id)
   })
+
+  ws.on("message", function(message) {
+    console.log("received: " + message)
+  });
 })
