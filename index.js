@@ -19,14 +19,14 @@ wss.on("connection", function(ws) {
 //    ws.send(JSON.stringify(new Date()), function() {  })
 //  }, 1000)
 
-  console.log("websocket connection open")
+  console.log("websocket connection open");
 
   ws.on("close", function() {
-    console.log("websocket connection close")
+    console.log("websocket connection close");
 //    clearInterval(id)
-  })
+  });
 
   ws.on("message", function(message) {
-    console.log("received: " + message)
+    console.log("received: " + message);
   });
 })
